@@ -1,0 +1,40 @@
+# ─── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ─── Jupyter Notebook ──────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ─── Virtual Environments ──────────────────────────────────
+venv/
+env/
+ENV/
+.venv/
+
+# ─── Model Weights & Data (kept on Google Drive) ──────────
+*.pth
+*.pt
+*.h5
+*.pkl
+weights/
+data/
+runs/
+outputs/
+
+# ─── IDE / Editor ──────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─── OS Files ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Streamlit ─────────────────────────────────────────────
+.streamlit/secrets.toml
