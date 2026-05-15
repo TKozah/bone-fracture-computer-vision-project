@@ -62,7 +62,9 @@ Full methodology, dataset construction, ablations, threshold calibration, and di
 bone-fracture-computer-vision-project/
 │
 ├── README.md                          (this file)
-├── requirements.txt                   (Python dependencies)
+├── WEIGHTS.md                         Download links for trained model weights
+├── requirements.txt                   Python dependencies
+├── .gitignore
 │
 ├── notebooks/
 │   ├── 01_preprocessing.ipynb         FracAtlas download, cleaning, 4-class splits
@@ -115,17 +117,17 @@ After download, extract the archive into a folder named `FracAtlas/` at a locati
 
 ### 4. Download the trained weights
 
-The trained model checkpoints are hosted on Google Drive (they exceed GitHub's file-size limit):
+The trained model checkpoints are hosted on Google Drive.
 
-EDIT THIS
+📦 **See [WEIGHTS.md](WEIGHTS.md) for direct download links to each file.**
 
-The folder contains:
-- `best_model_v4.pth` — EfficientNet-B3 classifier (~120 MB)
-- `yolov8s_best.pt` — YOLOv8s detector (~22 MB)
-- `faster_rcnn_best.pth` — Faster R-CNN detector (~165 MB)
-- `class_info_v4.pkl` — class names, weights, and calibrated thresholds
+Files included:
+- `best_efficientnet_b3_v4.pth` — Stage 1 EfficientNet-B3 classifier
+- `best_yolov8_fracture.pt` — Stage 2 YOLOv8s detector
+- `faster_rcnn_best.pth` — Stage 2 Faster R-CNN detector
+- `class_info_v4.pkl` — class names + calibrated thresholds
 
-Place these files in a folder of your choice (e.g., `weights/`) and update the paths at the top of the relevant notebooks.
+After downloading, place all files in a folder of your choice (e.g., `weights/`) and update the paths at the top of the relevant notebooks.
 
 ---
 
